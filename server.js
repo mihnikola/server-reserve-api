@@ -45,15 +45,15 @@ const timesRoutes = require('./routes/timesRoutes');
 const tokenRoutes = require('./routes/tokenRoutes');
 const connectDB = require('./dbConnection');
 const bodyParser = require('body-parser');
-const admin = require("firebase-admin");
-const serviceAccount = require("./barber-demo-218de-firebase-adminsdk-fbsvc-190d9f7677.json");
+// const admin = require("firebase-admin");
+// const serviceAccount = require("./barber-demo-218de-firebase-adminsdk-fbsvc-190d9f7677.json");
 const Token = require('./models/Token');
 // const { Expo } = require("expo-server-sdk");
 // const Token = require('./models/Token')
 // Initialize Firebase Admin SDK with service account credentials
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+// admin.initializeApp({
+  // credential: admin.credential.cert(serviceAccount),
+// });
 // const expo = new Expo();
 const app = express();
 app.use(cors())
