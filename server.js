@@ -33,6 +33,7 @@
 
 const { Expo } = require("expo-server-sdk");
 const expo = new Expo();
+const path = require('path');
 
 const express = require('express');
 const cors = require('cors');
