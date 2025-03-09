@@ -57,7 +57,8 @@ const Token = require('./models/Token');
 // const expo = new Expo();
 const app = express();
 app.use(cors())
-app.use('/images',express.static('images'));
+// app.use('/images',express.static('images'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to parse JSON
 app.use(bodyParser.json({ limit: '50mb' }));
